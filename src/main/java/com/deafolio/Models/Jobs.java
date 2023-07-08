@@ -29,4 +29,5 @@ public class Jobs {
     private String availability;
     private String expectation;
     private String jobType;
+    private String applyUrl;
 }

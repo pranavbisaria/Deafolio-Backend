@@ -30,7 +30,7 @@ public class AuthServiceImpl implements AuthService {
         User user = this.userRepo.findByEmail(request.getEmail()).orElseThrow(() ->new ResourceNotFoundException("User", "Email: " + request.getEmail(), 0));
         JwtAuthResponse response = this.jwtTokenGenerator.getTokenGenerate(request.getEmail(), request.getPassword());
         if (response == null) {
-            return new ResponseEntity<>(new ApiResponse("Invalid Password", true), HttpStatus.UNAUTHORIZED);
+            return new ResponseEntity<>(new ApiResponse("Invalid Password", false), HttpStatus.UNAUTHORIZED);
         } else {
             response.setFullName(user.getFullName());
             response.setRoles(user.getRoles());

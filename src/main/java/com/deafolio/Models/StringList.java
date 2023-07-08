@@ -12,5 +12,5 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class StringList {
     @Id
-    private String string;
+    private String content;
 }
