@@ -20,6 +20,7 @@ public class UserProfile {
     private String phoneNumber;
     private String age;
     private String DOB;
+    private String profilePhoto;
     private String gender;
     private List<Skills> mySkills;
     private List<StringList> qualifications;
