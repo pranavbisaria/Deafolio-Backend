@@ -20,7 +20,7 @@ import java.util.List;
 @EnableCaching
 @EnableAsync
 @RequiredArgsConstructor
-@OpenAPIDefinition(info = @Info(title = "GreenStitch-Task By Pranav Bisaria", version = "3.0.7", description = "This is a springboot application for login/signup along with the JWT token filter with access and refresh token and email OTP verification and caching using Guava cache."))
+@OpenAPIDefinition(info = @Info(title = "Deafolio - Backend", version = "3.0.7", description = "This is a springboot application for complete handling of the Deafolio platform"))
 public class DeafolioApplication implements CommandLineRunner {
 	private final RoleRepo roleRepo;
 	@Bean

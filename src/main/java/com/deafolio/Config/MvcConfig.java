@@ -17,8 +17,8 @@ public class MvcConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("https://greenstitch.pranavbisaria.tech")
-                .allowedMethods("GET", "POST", "OPTIONS")
+                .allowedOrigins("http://localhost:3000")
+                .allowedMethods("*")
                 .allowedHeaders("Origin", "X-Requested-With", "Content-Type", "Accept")
                 .allowCredentials(true)
                 .maxAge(1728000);
